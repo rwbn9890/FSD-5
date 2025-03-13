@@ -1,0 +1,61 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1320px;
+    margin:50px auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+
+.p-1{
+    padding: 10px;
+}
+.p-2{
+    padding: 20px;
+}
+
+.box{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    background-color: rgba(133, 178, 192, 0.219) ;
+background-image: url(https://imgd.aeplcdn.com/664x374/n/cw/ec/122451/range-rover-sport-exterior-right-front-three-quarter-20.jpeg?isig=0&q=80);
+background-size: cover;
+background-position: center;
+}
+
+.h-50{
+    height: 50px;
+}
+
+.h-100{
+    height: 100px;
+}
+.h-200{
+    height: 200px;
+}
+.h-300{
+    height: 300px;
+}
+.h-400{
+    height: 400px;
+}
+.h-500{
+    height:500px;
+}
+
+
+
+
