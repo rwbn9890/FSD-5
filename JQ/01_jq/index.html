@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+    
+    <button class="btnHide">hide</button>
+    <button class="btnShow">show</button>
+    <button class="btnToggle">Toggle</button>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci odit alias, magnam perferendis provident deleniti hic, sunt consequatur dolore explicabo animi et, ipsam saepe. Voluptate architecto excepturi possimus temporibus quas.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci odit alias, magnam perferendis provident deleniti hic, sunt consequatur dolore explicabo animi et, ipsam saepe. Voluptate architecto excepturi possimus temporibus quas.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci odit alias, magnam perferendis provident deleniti hic, sunt consequatur dolore explicabo animi et, ipsam saepe. Voluptate architecto excepturi possimus temporibus quas.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci odit alias, magnam perferendis provident deleniti hic, sunt consequatur dolore explicabo animi et, ipsam saepe. Voluptate architecto excepturi possimus temporibus quas.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci odit alias, magnam perferendis provident deleniti hic, sunt consequatur dolore explicabo animi et, ipsam saepe. Voluptate architecto excepturi possimus temporibus quas.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci odit alias, magnam perferendis provident deleniti hic, sunt consequatur dolore explicabo animi et, ipsam saepe. Voluptate architecto excepturi possimus temporibus quas.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci odit alias, magnam perferendis provident deleniti hic, sunt consequatur dolore explicabo animi et, ipsam saepe. Voluptate architecto excepturi possimus temporibus quas.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci odit alias, magnam perferendis provident deleniti hic, sunt consequatur dolore explicabo animi et, ipsam saepe. Voluptate architecto excepturi possimus temporibus quas.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci odit alias, magnam perferendis provident deleniti hic, sunt consequatur dolore explicabo animi et, ipsam saepe. Voluptate architecto excepturi possimus temporibus quas.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci odit alias, magnam perferendis provident deleniti hic, sunt consequatur dolore explicabo animi et, ipsam saepe. Voluptate architecto excepturi possimus temporibus quas.
+    </div>
+
+
+    <button id="color">white</button>
+   
+</body>
+
+
+ <script>
+    $(".btnHide").click(function(){
+        $(".box").hide("slow")
+    })
+
+    $(".btnShow").click(function(){
+        $(".box").show(2000)
+    })
+
+    $(".btnToggle").mouseleave(function(){
+        $(".box1").toggle("slower")
+        $(".box2").toggle("slower")
+    })
+
+
+    $("#color").click(function(){
+        $(".box2").toggleClass("text")
+        // $(".box2").css("color":"red")
+    })
+</script>
+
+
+</html>

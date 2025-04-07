@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<style>
+
+    body{
+        /* background-color: rgb(223, 222, 231); */
+    }
+    .container{
+        max-width: 1320px;
+        margin: auto;
+    }
+    .p-10{
+        padding: 10px;
+    }
+    .box{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        height: 200px;
+
+    }
+
+    .box img{
+        width: 100%;
+    }
+
+    .box{
+        text-align: center;
+    }
+
+
+    .slick-prev:before, .slick-next:before{
+    color:black  !important
+}
+
+.slick-next {
+    right: 24px !important;
+}
+
+.slick-prev{
+    left:25px !important;
+    z-index: 10;
+}
+
+   
+</style>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="slidingone">
+            <div class="p-10">
+                <div class="box">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/141113/venue-exterior-right-front-three-quarter-16.jpeg?isig=0&q=80" alt="">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="p-10">
+                <div class="box">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/142515/elevate-exterior-right-front-three-quarter-21.jpeg?isig=0&q=80" alt="">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="p-10">
+                <div class="box">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/159099/swift-exterior-right-front-three-quarter-31.jpeg?isig=0&q=80" alt="">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="p-10">
+                <div class="box">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/112839/glanza-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80" alt="">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="p-10">
+                <div class="box">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/138895/safari-facelift-exterior-right-front-three-quarter-39.jpeg?isig=0&q=80" alt="">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="p-10">
+                <div class="box">
+                    <img src="https://imgd.aeplcdn.com/600x337/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80" alt="">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="p-10">
+                <div class="box">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/156405/xuv-3xo-exterior-right-front-three-quarter-34.jpeg?isig=0&q=80" alt="">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    // $('.slidingone').slick();
+
+
+
+//     $('.slidingone').slick({
+//   infinite: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 3
+// });
+
+
+
+$('.slidingone').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  arrows:true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay:true,
+  autoplaySpeed: 500,
+  speed: 2000,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots:false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+</html>
