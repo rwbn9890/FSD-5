@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar d-flex justify-between flex-wrap">
+            <div class="logo">
+                <h1>Alishan</h1>
+            </div>
+            <div class="menu d-none d-lg-block">
+                <button id="toggler"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="nav d-lg-none d-flex w-lg-1 p-lg-4">
+                <ul class="d-flex align-items align-items-start-lg flex-lg-column" >
+                    <li>Home</li>
+                    <li>About</li>
+                    <li class="dropdown">Product
+                        <ul class="dropdown-menu">
+                            <li>Mouse</li>
+                            <li>keyboard</li>
+                            <li>Speakers</li>
+                            <li>Cpu</li>
+                        </ul>
+                    </li>
+                    <li>Contact</li>
+                    <li style="padding:0"><button>Log In</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        
+    </section>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+
+$("#toggler").click(function(){
+    $(".nav").slideToggle("faster")
+})
+</script>
+</html>
