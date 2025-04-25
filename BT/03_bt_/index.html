@@ -29,6 +29,21 @@
 
 
 
+         /* positions */
+
+         .bottom-10{
+            bottom: 10%;
+         }
+
+
+
+         /* sizing */
+
+         .w-fit{
+            width: fit-content;
+         }
+
+
     </style>
 </head>
 <body>
@@ -176,7 +191,53 @@
                 <td>4</td>
             </tr>
         </table>
+    </div>
 
+    <hr>
+
+
+
+    <div class="container shadow-sm p-2 my-5">
+        <div class="row">
+            <div class="col-2 p-2">
+                <div class="shadow bg-success rounded-2 p-4 opacity-75">
+                    Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+            <div class="col-2 p-2">
+                <div class="shadow bg-success rounded-2 p-4 opacity-50">
+                    Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+            <div class="col-2 p-2">
+                <div class="shadow bg-success rounded-2 p-4 opacity-25">
+                    Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+            <div class="col-2 p-2">
+                <div class="shadow bg-success rounded-2 p-4 opacity-0">
+                    Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+            <div class="col-4 p-2">
+                <div class="shadow bg-light rounded-2 p-4 overflow-auto" style="height: 100px;">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore accusantium eum esse eos praesentium doloremque nisi totam necessitatibus, deleniti nam dolor voluptas amet sunt labore. Officiis excepturi corporis sequi necessitatibus.
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+    <div class="shadow border p-3 rounded-3 bg-light w-fit position-fixed bottom-10 start-50 translate-middle-x">
+        <div class="d-flex justify-content-between gap-3">
+            <button class="rounded p-2 border-0">🏠</button>
+            <button class="rounded p-2 border-0 position-relative">📞
+                <span class="position-absolute start-100 translate-middle top-0 rounded-circle fs-6 text-white border border-2  bg-danger" style="width: 20px; height: 20px;">2</span>
+            </button>
+            <button class="rounded p-2 border-0">📝</button>
+            <button class="rounded p-2 border-0">⚙️</button>
+        </div>
     </div>
 
     
