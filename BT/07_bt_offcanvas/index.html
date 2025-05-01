@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <header class="border">
+        <div class="navbar fixed-top navbar-expand-lg navbar-line navbar-dark shadow text-bg-dark">
+            <div class="container">
+                <div class="navbar-brand">
+                    <h1>Alishan</h1>
+                </div>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarFirst">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class=" collapse navbar-collapse container" id="navbarFirst">
+                    <ul class="ms-auto navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link">Mouse</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link">Keyboard</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link">Processor</a>
+                                </li>
+                                <li class="dropdown-item dropend" >
+                                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sound</a>
+                                    <ul class="dropdown-menu text-white">
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link fw-bold">Sounds</a>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link">Sony</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link">Apple</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link">Bolt</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-success btn-sm" data-bs-toggle="offcanvas" data-bs-target="#sidebar">Acount</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <hr>
+
+    <button href="#container" data-bs-toggle="collapse">toggle</button>
+
+    <div class="container border p-4 collapse" id="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sequi porro deserunt eaque vitae nulla aspernatur, dicta esse suscipit magnam explicabo tempore placeat nemo non aliquam enim quae neque excepturi.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sequi porro deserunt eaque vitae nulla aspernatur, dicta esse suscipit magnam explicabo tempore placeat nemo non aliquam enim quae neque excepturi.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sequi porro deserunt eaque vitae nulla aspernatur, dicta esse suscipit magnam explicabo tempore placeat nemo non aliquam enim quae neque excepturi.
+    </div>
+
+
+<br>
+<br>
+<br>
+
+
+
+
+<section>
+    <div class="modal fade" id="popup" data-bs-backdrop="static" >
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Login</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur culpa, eius error impedit sint eveniet aliquid porro dolor inventore ullam sed modi quam excepturi alias, explicabo corporis quas molestias vel!
+
+                <input type="text">
+                <br/>
+                <br/>
+                <input type="text">
+                <br/>
+                <br/>
+               
+
+                <button class="btn btn-warning btn-sm">Sign In</button>
+              </div>
+              <div class="modal-footer">
+                <a href="">reset password</a>
+                <button class="btn btn-danger btn-sm" data-bs-dismiss="modal">close</button>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#register">Register</button>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="modal fade" id="register" data-bs-backdrop="static" >
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Register</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <input type="text">
+                <br/>
+                <br/>
+                <input type="text">
+                <br/>
+                <br/>
+                <input type="text">
+                <br/>
+                <br/>
+                <input type="text">
+                <br/>
+                <br/>
+               
+                <button class="btn btn-warning btn-sm">REgister</button>
+              </div>
+              <div class="modal-footer">
+                <a href="">reset password</a>
+                <button class="btn btn-danger btn-sm" data-bs-dismiss="modal">close</button>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#popup">Login</button>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#sidebar">Sidebar</button>
+
+
+
+<section>
+    <div class="offcanvas offcanvas-start text-bg-dark" id="sidebar" data-bs-backdrop="true" data-bs-scroll="true">
+        <div class="offcanvas-header border-bottom">
+            <h4 class="offcanvas-title">This is Sidebar</h4>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h5># INFO-</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur saepe dicta recusandae consectetur quisquam sequi alias accusamus repellendus. Laboriosam eius quos odio. Aut necessitatibus iste in, quidem nostrum placeat. Mollitia!</p>
+           
+            <div class="d-flex">
+                 <button class="btn btn-primary">View More</button>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Options</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">⚙️ Setting</li>
+                    <li class="dropdown-item">🗨️ Help</li>
+                    <li class="dropdown-item">🗑️ Remove</li>
+                </ul>
+            </div>
+            </div>
+           
+        </div>
+    <div class="offcanvas-footer border-top p-3 ">
+        <button class="btn btn-danger ms-auto d-block" data-bs-toggle="modal" data-bs-target="#popup">Sign UP</button>
+    </div>
+    </div>
+</section>
+
+
+
+<div class="container my-5">
+    <div class="row g-4 row-cols-lg-4">
+        <div class="col">
+            <div class="rounded-2 shadow p-5 bg-info-subtle">
+                <h2>This is title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente accusantium soluta, dicta molestias vitae error rem. Vel, ratione fugiat.
+                    <span class="collapse fade" id="card1">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero labore exercitationem saepe aperiam amet aliquid sunt consectetur voluptate perferendis.
+                    </span>
+                    <button class="btn btn-link btn-sm" data-bs-toggle="collapse" data-bs-target="#card1"">More</button>
+                </p>
+                
+            </div>
+        </div>
+        <div class="col">
+            <div class="rounded-2 shadow p-5 bg-info-subtle">
+                <h2>This is title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente accusantium soluta, dicta molestias vitae error rem. Vel, ratione fugiat.
+                    <span class="collapse fade" id="card2">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero labore exercitationem saepe aperiam amet aliquid sunt consectetur voluptate perferendis.
+                    </span>
+                    <button class="btn btn-link btn-sm" data-bs-toggle="collapse" data-bs-target="#card2">More</button>
+                </p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="rounded-2 shadow p-5 bg-info-subtle">
+                <h2>This is title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente accusantium soluta, dicta molestias vitae error rem. Vel, ratione fugiat.
+                    <span class="collapse fade" id="card3">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero labore exercitationem saepe aperiam amet aliquid sunt consectetur voluptate perferendis.
+                    </span>
+                    <button class="btn btn-link btn-sm" data-bs-toggle="collapse" data-bs-target="#card3">More</button>
+                </p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="rounded-2 shadow p-5 bg-info-subtle">
+                <h2>This is title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente accusantium soluta, dicta molestias vitae error rem. Vel, ratione fugiat.
+                    <span class="collapse fade" id="card1">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero labore exercitationem saepe aperiam amet aliquid sunt consectetur voluptate perferendis.
+                    </span>
+                    <button class="btn btn-link btn-sm" data-bs-toggle="collapse" data-bs-target="#card1">More</button>
+                </p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="rounded-2 shadow p-5 bg-info-subtle">
+                <h2>This is title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente accusantium soluta, dicta molestias vitae error rem. Vel, ratione fugiat.
+                    <span class="collapse fade" id="card1">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero labore exercitationem saepe aperiam amet aliquid sunt consectetur voluptate perferendis.
+                    </span>
+                    <button class="btn btn-link btn-sm" data-bs-toggle="collapse" data-bs-target="#card1">More</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<p class="fs-1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi nostrum corporis maxime! Exercitationem dolore impedit in corporis ut! Nobis possimus ipsa dolorum delectus ea? Ipsa repellendus expedita perferendis vero!
+</p>
+<p class="fs-1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi nostrum corporis maxime! Exercitationem dolore impedit in corporis ut! Nobis possimus ipsa dolorum delectus ea? Ipsa repellendus expedita perferendis vero!
+</p>
+<p class="fs-1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi nostrum corporis maxime! Exercitationem dolore impedit in corporis ut! Nobis possimus ipsa dolorum delectus ea? Ipsa repellendus expedita perferendis vero!
+</p>
+<p class="fs-1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi nostrum corporis maxime! Exercitationem dolore impedit in corporis ut! Nobis possimus ipsa dolorum delectus ea? Ipsa repellendus expedita perferendis vero!
+</p>
+<p class="fs-1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi nostrum corporis maxime! Exercitationem dolore impedit in corporis ut! Nobis possimus ipsa dolorum delectus ea? Ipsa repellendus expedita perferendis vero!
+</p>
+<p class="fs-1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi nostrum corporis maxime! Exercitationem dolore impedit in corporis ut! Nobis possimus ipsa dolorum delectus ea? Ipsa repellendus expedita perferendis vero!
+</p>
+<p class="fs-1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi nostrum corporis maxime! Exercitationem dolore impedit in corporis ut! Nobis possimus ipsa dolorum delectus ea? Ipsa repellendus expedita perferendis vero!
+</p>
+
+
+
+
+
+</body>
+
+</html>
