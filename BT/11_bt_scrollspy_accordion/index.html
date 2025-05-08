@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <style>
+        .bg-dark-trans{
+           background-color:  #0000004d
+        }
+
+
+        .fade-right{
+            animation: fade-right 0.5s ease-in-out;
+        }
+
+        @keyframes fade-right {
+            from{
+                transform: translateX(150px);
+            }
+            to{
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+<!-- bootstrap navbar  -->
+
+    <header class="border">
+        <div class="navbar fixed-top navbar-expand-lg navbar-line navbar-dark shadow text-bg-dark">
+            <div class="container">
+                <div class="navbar-brand">
+                    <h1>Alishan</h1>
+                </div>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarFirst">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class=" collapse navbar-collapse container" id="navbarFirst">
+                    <ul class="ms-auto navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link">Mouse</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link">Keyboard</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link">Processor</a>
+                                </li>
+                                <li class="dropdown-item dropend" >
+                                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sound</a>
+                                    <ul class="dropdown-menu text-white">
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link fw-bold">Sounds</a>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link">Sony</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link">Apple</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link">Bolt</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-success btn-sm" data-bs-toggle="offcanvas" data-bs-target="#sidebar">Acount</button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="btn btn-primary position-relative">Messages
+                                <span class="badge rounded text-bg-danger position-absolute start-100 top-0 translate-middle">2</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- bootstrap carousel  -->
+
+    <section>
+        <div class="container mt-5 pt-5">
+            <div class="carousel slide carousel-dark " data-bs-ride="carousel" id="headerSlider">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                            <div class="bg-secondary">
+                                <img class="img-thumbnail" src="https://imgd.aeplcdn.com/664x374/n/cw/ec/107719/range-rover-exterior-right-front-three-quarter-46.jpeg?isig=0&q=80" alt="">
+                                <div class="carousel-caption bg-dark-trans">
+                                    <h2>Ranger Rover Sport</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ullam quidem repellendus a suscipit molestias!</p>
+                                </div>
+                            </div>            
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                            <div class="bg-secondary" >
+                                <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/122451/range-rover-sport-exterior-right-front-three-quarter-20.jpeg?isig=0&q=80" alt="" class="img-thumbnail">
+                                <div class="carousel-caption bg-dark-trans">
+                                    <h2>Ranger Rover Autbiography</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ullam quidem repellendus a suscipit molestias!</p>
+                                </div>
+                            </div>            
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                            <div class="bg-secondary" >
+                                <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/107719/range-rover-exterior-right-rear-three-quarter.jpeg?isig=0&q=80" alt="" class="img-thumbnail">
+                                <div class="carousel-caption bg-dark-trans">
+                                    <h2>Ranger Rover Sport</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ullam quidem repellendus a suscipit molestias!</p>
+                                </div>
+                            </div>            
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-indicators">
+                    <button class="active" data-bs-target="#headerSlider" data-bs-slide-to="0"></button>
+                    <button data-bs-target="#headerSlider" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#headerSlider" data-bs-slide-to="2"></button>
+                </div>
+
+
+
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#headerSlider">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#headerSlider">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- bootstrap card  -->
+
+
+
+    <div class="container my-5">
+        <div class="row g-3 row-cols-4">
+            <div class="col">
+                <div class="card">
+                    <img  class="card-img-top" src="https://www.financialexpress.com/wp-content/uploads/2022/05/2023-Range-Rover-Sport.jpg" alt="">
+                    <div class="card-header p-1 m-0">
+                       new arival...!
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Land Rover</h5>
+                        <h6 class="card-subtitle">Ranger rover sport</h6>
+                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary btn-sm">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img  class="card-img-top" src="https://www.financialexpress.com/wp-content/uploads/2022/05/2023-Range-Rover-Sport.jpg" alt="">
+                    <div class="card-header p-1 m-0">
+                       <h5 class="card-title">Land Rover</h5>
+                    </div>
+                    <div class="card-body">
+                       <ul class="list-group">
+                        <li class="list-group-item"> Sport red</li>
+                        <li class="list-group-item"> Sport Hiper</li>
+                        <li class="list-group-item"> Sport sb</li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6">
+                            <img  class="card-img-top" src="https://www.financialexpress.com/wp-content/uploads/2022/05/2023-Range-Rover-Sport.jpg" alt="">
+                            <div class="card-header p-1 m-0">
+                            new arival...!
+                            </div> 
+                        </div>
+                        <div class="col-6">
+                             <div class="card-body">
+                        <h5 class="card-title">Land Rover</h5>
+                        <h6 class="card-subtitle">Ranger rover sport</h6>
+                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-secondary btn-sm">More</button>
+                                </div>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-bg-dark">
+                    <img  class="card-img" src="https://www.financialexpress.com/wp-content/uploads/2022/05/2023-Range-Rover-Sport.jpg" alt="">
+                    <div class="card-header p-1 m-0">
+                       <h5 class="card-title">Land Rover</h5>
+                    </div>
+                    <div class="card-img-overlay">
+                       <h5 class="card-title">Rpanger rover</h5>
+                       <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, numquam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr>
+
+
+    <!-- bootstrap scroll spy  -->
+
+    <div class="container my-5">
+        <div class="nav nav-pills" id="navscroll">
+            <a href="#Home" class="nav-link active">Home</a>
+            <a href="#About" class="nav-link">About</a>
+            <a href="#Products" class="nav-link">Products</a>
+            <a href="#Contact" class="nav-link">Contact</a>
+            <a href="#summary" class="nav-link">summary</a>
+        </div>
+
+
+        <div class="scroll-spy border overflow-auto" data-bs-spy="scroll" data-bs-target="#navscroll" data-bs-smooth-scroll="true" style="height: 200px;">
+            <div class="my-3 p-2" id="Home">
+                <h4>Home</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+            </div>
+            <div class="my-3 p-2" id="About">
+                <h4>about</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+            </div>
+            <div class="my-3 p-2" id="Products">
+                <h4>Products</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+            </div>
+            <div class="my-3 p-2" id="Contact">
+                <h4>contact</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+            </div>
+            <div class="my-3 p-2" id="summary">
+                <h4>summery</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate explicabo voluptatum ea necessitatibus modi ducimus dicta ullam recusandae, voluptatem sed enim natus illum rem rerum. Id optio itaque modi?
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <hr>
+
+
+    <hr>
+
+    <button href="#container" data-bs-toggle="collapse">toggle</button>
+
+    <div class="container border p-4 collapse" id="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sequi porro deserunt eaque vitae nulla aspernatur, dicta esse suscipit magnam explicabo tempore placeat nemo non aliquam enim quae neque excepturi.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sequi porro deserunt eaque vitae nulla aspernatur, dicta esse suscipit magnam explicabo tempore placeat nemo non aliquam enim quae neque excepturi.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sequi porro deserunt eaque vitae nulla aspernatur, dicta esse suscipit magnam explicabo tempore placeat nemo non aliquam enim quae neque excepturi.
+    </div>
+
+
+<br>
+<br>
+<br>
+
+
+
+<!-- login  modal  -->
+
+<section>
+    <div class="modal fade" id="popup" data-bs-backdrop="static" >
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Login</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+               
+                <form action="" class="p-4">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="input-group">
+                                <span class="input-group-text">👤</span>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" placeholder="username" id="username">
+                                    <label for="username" class="form-label">username</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group">
+                                <span class="input-group-text">🔑</span>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" placeholder="password" id="password">
+                                    <label for="password" class="form-label">Password</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-success">Login 🔏</button>
+                        </div>
+                    </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a href="">reset password</a>
+                <button class="btn btn-danger btn-sm" data-bs-dismiss="modal">close</button>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#register">Register</button>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- registions modal -->
+
+<section>
+    <div class="modal fade" id="register" data-bs-backdrop="static" >
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Register</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+
+                <form action="" class="p-4">
+                    <div class="row row-cols-1 g-4">
+                        <div class="col">
+                            <label for="" class="form-label">username</label>
+                            <div class="input-group">
+                                <span class="input-group-text">👤</span>
+                                <input type="Username" placeholder="Username" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group">
+                                <span class="input-group-text">📧</span>
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group">
+                                <span class="input-group-text">📞</span>
+                                <input type="number" placeholder="phone" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group">
+                                <span class="input-group-text">🔑</span>
+                                <input type="Password" placeholder="Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                           <button class="btn btn-success ">Register</button>
+                        </div>
+                    </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a href="">reset password</a>
+                <button class="btn btn-danger btn-sm" data-bs-dismiss="modal">close</button>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#popup">Login</button>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#sidebar">Sidebar</button>
+
+
+<!-- offcanvas sidebar -->
+
+<section>
+    <div class="offcanvas offcanvas-start text-bg-dark" id="sidebar" data-bs-backdrop="true" data-bs-scroll="true">
+        <div class="offcanvas-header border-bottom">
+            <h4 class="offcanvas-title">This is Sidebar</h4>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h5># INFO-</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur saepe dicta recusandae consectetur quisquam sequi alias accusamus repellendus. Laboriosam eius quos odio. Aut necessitatibus iste in, quidem nostrum placeat. Mollitia!</p>
+           
+            <div class="d-flex">
+                 <button class="btn btn-primary">View More</button>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Options</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">⚙️ Setting</li>
+                    <li class="dropdown-item">🗨️ Help</li>
+                    <li class="dropdown-item">🗑️ Remove</li>
+                </ul>
+            </div>
+            </div>
+           
+        </div>
+    <div class="offcanvas-footer border-top p-3 ">
+        <button class="btn btn-danger ms-auto d-block" data-bs-toggle="modal" data-bs-target="#popup">Sign UP</button>
+    </div>
+    </div>
+</section>
+
+
+
+
+<!-- callapsing cards grid -->
+
+<section>    
+    <div class="container my-5">
+        <div class="row g-4 row-cols-lg-4">
+            <div class="col">
+                <div class="rounded-2 shadow p-5 bg-info-subtle">
+                    <h2>This is title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente accusantium soluta, dicta molestias vitae error rem. Vel, ratione fugiat.
+                        <span class="collapse fade" id="card1">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero labore exercitationem saepe aperiam amet aliquid sunt consectetur voluptate perferendis.
+                        </span>
+                        <button class="btn btn-link btn-sm" data-bs-toggle="collapse" data-bs-target="#card1"">More</button>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded-2 shadow p-5 bg-info-subtle">
+                    <h2>This is title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente accusantium soluta, dicta molestias vitae error rem. Vel, ratione fugiat.
+                        <span class="collapse fade" id="card2">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero labore exercitationem saepe aperiam amet aliquid sunt consectetur voluptate perferendis.
+                        </span>
+                        <button class="btn btn-link btn-sm" data-bs-toggle="collapse" data-bs-target="#card2">More</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded-2 shadow p-5 bg-info-subtle">
+                    <h2>This is title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente accusantium soluta, dicta molestias vitae error rem. Vel, ratione fugiat.
+                        <span class="collapse fade" id="card3">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero labore exercitationem saepe aperiam amet aliquid sunt consectetur voluptate perferendis.
+                        </span>
+                        <button class="btn btn-link btn-sm" data-bs-toggle="collapse" data-bs-target="#card3">More</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded-2 shadow p-5 bg-info-subtle">
+                    <h2>This is title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente accusantium soluta, dicta molestias vitae error rem. Vel, ratione fugiat.
+                        <span class="collapse fade" id="card1">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero labore exercitationem saepe aperiam amet aliquid sunt consectetur voluptate perferendis.
+                        </span>
+                        <button class="btn btn-link btn-sm" data-bs-toggle="collapse" data-bs-target="#card1">More</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rounded-2 shadow p-5 bg-info-subtle">
+                    <h2>This is title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente accusantium soluta, dicta molestias vitae error rem. Vel, ratione fugiat.
+                        <span class="collapse fade" id="card1">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero labore exercitationem saepe aperiam amet aliquid sunt consectetur voluptate perferendis.
+                        </span>
+                        <button class="btn btn-link btn-sm" data-bs-toggle="collapse" data-bs-target="#card1">More</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- tab content  -->
+
+
+<section>
+    <div class="container my-5 py-5">
+        <div class="row">
+            <div class="col-2">
+                <ul class="nav flex-column nav-pills ">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" data-bs-toggle="tab" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-bs-toggle="tab">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#feature" class="nav-link" data-bs-toggle="tab">Feature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-bs-toggle="tab">contact</a>
+                    </li>
+                </ul> 
+            </div>
+            <div class="col-10">
+                <div class="tab-content">
+                    <div class="tab-pane show active fade fade-right" id="home">
+                        <div class="row g-0 border rounded">
+                            <div class="col-3">
+                                <img class="img-fluid" src="https://imgd.aeplcdn.com/664x374/cw/ec/26592/Land-Rover-Range-Rover-Exterior-130450.jpg?wm=0&q=80" alt="">
+                            </div>
+                            <div class="col-9">
+                                <div class="card border-0">
+                                    <div class="card-header">
+                                        <h4>Ranger Rover</h4>
+                                    </div>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet numquam ex quidem obcaecati, ratione soluta harum reiciendis. Quis alias eius iste, ipsa excepturi quo non. Itaque incidunt delectus iure!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="tab-pane fade fade-right" id="about">
+                        <div class="row g-0 border rounded">
+                            <div class="col-3">
+                                <img class="img-fluid" src="https://imgd.aeplcdn.com/664x374/cw/ec/26592/Land-Rover-Range-Rover-Exterior-130450.jpg?wm=0&q=80" alt="">
+                            </div>
+                            <div class="col-9">
+                                <div class="card border-0">
+                                    <div class="card-header">
+                                        <h4>Ranger Rover</h4>
+                                    </div>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet numquam ex quidem obcaecati, ratione soluta harum reiciendis. Quis alias eius iste, ipsa excepturi quo non. Itaque incidunt delectus iure!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="tab-pane fade fade-right" id="feature">
+                        <div class="row g-0 border rounded">
+                            <div class="col-3">
+                                <img class="img-fluid" src="https://imgd.aeplcdn.com/664x374/cw/ec/26592/Land-Rover-Range-Rover-Exterior-130450.jpg?wm=0&q=80" alt="">
+                            </div>
+                            <div class="col-9">
+                                <div class="card border-0">
+                                    <div class="card-header">
+                                        <h4>Ranger Rover</h4>
+                                    </div>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet numquam ex quidem obcaecati, ratione soluta harum reiciendis. Quis alias eius iste, ipsa excepturi quo non. Itaque incidunt delectus iure!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="tab-pane fade fade-right" id="contact">
+                        <div class="row g-0 border rounded">
+                            <div class="col-3">
+                                <img class="img-fluid" src="https://imgd.aeplcdn.com/664x374/cw/ec/26592/Land-Rover-Range-Rover-Exterior-130450.jpg?wm=0&q=80" alt="">
+                            </div>
+                            <div class="col-9">
+                                <div class="card border-0">
+                                    <div class="card-header">
+                                        <h4>Ranger Rover</h4>
+                                    </div>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet numquam ex quidem obcaecati, ratione soluta harum reiciendis. Quis alias eius iste, ipsa excepturi quo non. Itaque incidunt delectus iure!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+       
+    </div>
+
+
+</section>
+
+
+
+
+<!-- bootstrap form controls  -->
+
+
+<section>
+    <div class="container my-5">
+        <div class="row g-2 row-cols-3">
+            <div class="col p-3">
+                <form action="" class="d-flex flex-column gap-4">
+                    <input type="text" class="form-control form-control-sm" placeholder="Enter Username">
+                    <input type="text" class="form-control form-control" placeholder="Enter Username">
+                    <input type="text" class="form-control form-control-lg" placeholder="Enter Username">
+                </form>
+            </div>
+            <div class="col p-3">
+                <form action="" class="">
+                    <label class="form-label" for="username" >Username</label>
+                    <input type="text" readonly value="alishan@1234" class="form-control-plaintext form-control-sm" placeholder="Enter Username" id="username">
+                    <label for="" class="form-label">Username</label>
+                    <input type="text" class="form-control form-control" placeholder="Enter Username">
+                    <input type="checkbox" class="form-check-input" placeholder="Enter Username">
+                    <label for="" class="form-check-label">Term and Conditions.</label>
+                </form>
+            </div>
+            <div class="col p-3">
+                <form action="" class="">
+                    <label for="" class="form-label">select Day</label>
+                  <select name="" id="" class="form-select form-select-sm">
+                    <option value="">Monday</option>
+                    <option value="">Tuesday</option>
+                    <option value="">Wensday</option>
+                    <option value="">Thursday</option>
+                  </select>
+                    <label for="" class="form-label">select Day</label>
+                  <select name="" id="" class="form-select form-select">
+                    <option value="">Monday</option>
+                    <option value="">Tuesday</option>
+                    <option value="">Wensday</option>
+                    <option value="">Thursday</option>
+                  </select>
+                    <label for="" class="form-label">select Day</label>
+                  <select disabled name="" id="" class="form-select form-select-lg">
+                    <option value="">Monday</option>
+                    <option value="">Tuesday</option>
+                    <option value="">Wensday</option>
+                    <option value="">Thursday</option>
+                  </select>
+                </form>
+            </div>
+            <div class="col-6 border p-4 d-flex gap-3">
+                <input type="text" placeholder="Username" class="form-control form-control-sm">
+                <input type="Password" placeholder="Password" class="form-control form-control-sm">
+                <button class="btn btn-dark btn-sm">Login</button>
+            </div>
+            <div class="col-6 p-4 border ">
+                <label for="" class="form-label">Enter Pic</label>
+                <input type="file" placeholder="Username" class="form-control form-control">
+            </div>
+
+            <div class="col-3 p-4 border ">
+                <label for="" class="form-label">Enter Pic</label>
+                <input type="text" list="datalist1" class="form-control">
+                <datalist id="datalist1">
+                    <option value="alishan@123"></option>
+                    <option value="pratic@123"></option>
+                    <option value="vaishali@123"></option>
+                    <option value="brij@123"></option>
+                </datalist>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- bootstrap accordion  -->
+
+<section>
+    <div class="container my-5 p-3 bg-secondary">
+        <div class="accordion accordion-flush" id="acordcount">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button active" data-bs-toggle="collapse" data-bs-target="#first" >
+                        first
+                    </button>
+                </div>
+                <div class="accordion-collapse collapse show" id="first" data-bs-parent="#acordcount">
+                    <div class="accordion-body">
+                        <h4>first</h4>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, non fuga ipsa doloribus temporibus assumenda esse! Quisquam, excepturi quae! Repellendus, minus asperiores et ad neque vero at possimus maiores quaerat.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#second" >
+                        SEcond
+                    </button>
+                </div>
+                <div class="accordion-collapse collapse " id="second" data-bs-parent="#acordcount">
+                    <div class="accordion-body">
+                        <h4>SEcond</h4>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, non fuga ipsa doloribus temporibus assumenda esse! Quisquam, excepturi quae! Repellendus, minus asperiores et ad neque vero at possimus maiores quaerat.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#third" >
+                        Third
+                    </button>
+                </div>
+                <div class="accordion-collapse collapse " id="third" data-bs-parent="#acordcount">
+                    <div class="accordion-body">
+                        <h4>Third</h4>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, non fuga ipsa doloribus temporibus assumenda esse! Quisquam, excepturi quae! Repellendus, minus asperiores et ad neque vero at possimus maiores quaerat.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- progress bar  -->
+
+
+<section>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="progress my-4">
+                    <div class="progress-bar bg-primary w-25">25%</div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar bg-danger w-50">50%</div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar bg-success w-75">75%</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="progress my-4">
+                    <div class="progress-bar progress-bar-striped bg-primary w-25">25%</div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar progress-bar-striped  bg-danger w-50">50%</div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar progress-bar-striped  bg-success w-75">75%</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="progress my-4">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary w-25">25%</div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated  bg-danger w-50">50%</div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated  bg-success w-75">75%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container my-5">
+        <ul class="pagination  justify-content-center">
+            <li class="page-item">
+                <a href="" class="page-link disabled">Prev</a>
+            </li>
+            <li class="page-item">
+                <a href="" class="page-link active">1</a>
+            </li>
+            <li class="page-item">
+                <a href="" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="" class="page-link">Next</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+</body>
+
+</html>
