@@ -4,7 +4,7 @@ using namespace std;
 
  int main(){
 
-    int digit = 7847;
+    int digit = 7;
     int sum = 0;
 
     while(digit > 1) // 78 / 7
