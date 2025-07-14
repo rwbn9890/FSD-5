@@ -11,7 +11,7 @@ using namespace std;
 
 class Std{
     public:
-    int id;
+    int id = 0;
     string name;
 
     Std(int id, string name){
@@ -31,25 +31,30 @@ class List{
 
     void addStudent(int id, string name){
         Std s(id, name);
-
         this->list.push_back(s);
-
-
     }
 
 
-
-    void updateStudent(int id, string n){
+    void searchStudent(int id){
         for( Std e : this->list){
             if(e.id == id){
-                e.name = n;
+                cout << e.id  << " | "<< e.name << endl;
             }
         }
     }
 
+    void removeStudent(int id){
+        for(int i=0; i<list.size(); i++){
+            if(this->list[i].id == id){
+                list.erase(list.begin()+i);
+            }
+        }
+    }
+
+
     void showAll(){
         for( Std e : list){
-            cout << e.id  << ", "<< e.name << endl;
+            cout << e.id  << " | "<< e.name << endl;
         }
     }
 
@@ -59,31 +64,50 @@ class List{
 
 
  int main(){
-
-    // Std s1(id, name), s2;
-
-    // s1.id = 1111;
-    // s1.name = "Pratik";
-
-    // s2.id = 2222;
-    // s2.name = "Dharmik";
-
-    // vector<Std> list;
-
-    // list.push_back(s1);
-    // list.push_back(s2);
-
+    int id;
+    string name;
+    int choice;
     List list;
 
-    list.addStudent(222, "Vaishali");
-    list.addStudent(333, "Brij");
-    list.addStudent(444, "Utsav");
-    list.addStudent(555, "Pratik");
+
+    while(choice != 0){
+        cout << "---------------------" << endl;
+        cout << "1 for Add" << endl;
+        cout << "2 for search" << endl;
+        cout << "3 for Remove" << endl;
+        cout << "4 for Display" << endl;
+        cout << "Choice: ";
+        cin >> choice;
+        
+        switch (choice)
+        {
+        case 1:
+                cout << "Id: ";
+                cin >> id;
+                cout << "Name: ";
+                cin >> name;
+                list.addStudent(id, name);
+            break;
+        case 2:
+                cout << "Id: ";
+                cin >> id;
+                list.searchStudent(id);
+            break;
+        case 3:
+            cout << "Id: ";
+            cin >> id;
+            list.removeStudent(id);
+            break;
+        case 4:
+            list.showAll();
+            break;
+        
+        default:
+            break;
+        }
+    }
 
 
-    list.updateStudent(444, "dharmik");
-
-    list.showAll();
 
 
     return 0;
